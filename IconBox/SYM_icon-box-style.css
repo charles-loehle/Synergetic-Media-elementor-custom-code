@@ -1,0 +1,77 @@
+/* Live demo https://codepen.io/charlesloehle/pen/oNaEgmw */
+
+/* 
+1. Create a container. 
+Edit Container 
+	|__Layout
+	|__Container
+		|__Boxed => Width 1140px
+	|__Items 
+		|__Direction => Row
+
+2. Create 6 containers inside it. 
+Edit Container 
+	|__Layout
+		|__Container 
+			|__content width => Full width 
+			|__Width: 25%, 
+		|__Items
+			|__Direction => Column
+			|__Align Items => Center
+			|__Gap between elements => 0
+	|__Advanced 
+	|__Margin => 0px 0px 25px 0px
+	|__Padding 15px 0px 0px 0px
+	|__CSS Classes => icon-box uniqueprefix_icon_box. For SYM I used icon-box commercial_icon_box, icon-box grapic_icon_box etc.
+
+3. Add image widget. 
+Edit Image 
+	|__Image 
+	|__Image Size => thumbnail 150x150. 
+	|__Style
+		|__Image 
+			|__Width: 52%. 
+	|__Advanced 
+		|__Layout 
+			|__Margin => 0px 0px 25px 0px 
+			|__Padding 5px 0px 0px 0px.
+
+3. Add heading widget.
+Edit Heading 
+	|__Content 
+		|__Title
+			|__HTML Tag => H4
+			|__Alignment => Center
+	|__Advanced 
+		|__CSS Classes => title
+*/
+
+/* Image animation */
+.icon-box img {
+	transition: all 0.3s ease-in-out;
+	position: relative;
+	top: 0px;
+}
+
+.icon-box:hover img {
+	top: -15px;
+}
+/* End image animation */
+
+/* Line animation */
+.commercial_icon_box.icon-box .title::before {
+	transition: all 0.3s ease-in-out;
+	content: '';
+	display: block;
+	width: 0;
+	margin: 0 auto;
+	height: 2px;
+	top: -15px;
+	position: relative;
+	background-color: #fcb12c;
+}
+
+.icon-box:hover .title::before {
+	width: 100px;
+}
+/* End line animation */

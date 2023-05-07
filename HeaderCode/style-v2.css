@@ -1,0 +1,37 @@
+/* shrinking header section */
+.sticky-header {
+	height: 120px;
+	transition: all 0.2s linear !important;
+	-webkit-transition: all 0.2s ease-in-out !important;
+	-moz-transition: all 0.2s ease-in-out !important;
+}
+
+.sticky-header.elementor-sticky--effects {
+	height: 70px;
+	box-shadow: 0px 6px 30px -4px rgba(0, 0, 0, 0.05);
+	transition: all 0.2s ease-in-out !important;
+	-webkit-transition: all 0.2s ease-in-out !important;
+	-moz-transition: all 0.2s ease-in-out !important;
+
+	/* blur BG when sticky */
+	-webkit-backdrop-filter: saturate(180%) blur(10px);
+	backdrop-filter: saturate(180%) blur(10px);
+}
+
+/***
+* Shorter header on mobile */
+
+@media only screen and (max-width: 767px) {
+	header.sticky-header {
+		height: 70px;
+	}
+}
+
+/* shrinking sticky logo image */
+header.sticky-header .logo img {
+	transition: transform 0.2s ease-in-out;
+}
+
+header.sticky-header.elementor-sticky--effects .logo img {
+	transform: scale(0.6);
+}
