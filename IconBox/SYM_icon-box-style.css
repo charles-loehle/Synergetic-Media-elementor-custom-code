@@ -24,13 +24,13 @@ Edit Container
 	|__Padding 15px 0px 0px 0px
 	|__CSS Classes => icon-box uniqueprefix_icon_box. For SYM I used icon-box commercial_icon_box, icon-box grapic_icon_box etc.
 
-3. Add image widget. 
+3. Add image widget. Note: all images chosen must have 1:1 aspect ratio. The animation image is 40px too tall so the fix is to give it a width of 34% on desktop and tablet. Then 44% for mobile.
 Edit Image 
 	|__Image 
-	|__Image Size => thumbnail 150x150. 
+	|__Image Size => thumbnail 300x300. 
 	|__Style
 		|__Image 
-			|__Width: 52%. 
+			|__Width: 40%. 
 	|__Advanced 
 		|__Layout 
 			|__Margin => 0px 0px 25px 0px 
@@ -42,6 +42,8 @@ Edit Heading
 		|__Title
 			|__HTML Tag => H4
 			|__Alignment => Center
+	|__Style
+		|__set ur styles!
 	|__Advanced 
 		|__CSS Classes => title
 */
