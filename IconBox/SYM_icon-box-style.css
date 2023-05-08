@@ -61,7 +61,7 @@ Edit Heading
 /* End image animation */
 
 /* Line animation */
-.commercial_icon_box.icon-box .title::before {
+.icon-box .title::before {
 	transition: all 0.3s ease-in-out;
 	content: '';
 	display: block;
@@ -70,7 +70,34 @@ Edit Heading
 	height: 2px;
 	top: -15px;
 	position: relative;
+}
+
+.commercial_icon_box.icon-box .title::before {
+	background-color: #f36d26;
+}
+
+.graphic_icon_box.icon-box .title::before {
+	background-color: #1a8282;
+}
+
+.web_icon_box.icon-box .title::before {
 	background-color: #fcb12c;
+}
+
+.video_icon_box.icon-box .title::before {
+	background-color: #a6bc39;
+}
+
+.video_icon_box.icon-box .title::before {
+	background-color: #a6bc39;
+}
+
+.animation_icon_box.icon-box .title::before {
+	background-color: #f36d26;
+}
+
+.social_icon_box.icon-box .title::before {
+	background-color: #1a8282;
 }
 
 .icon-box:hover .title::before {

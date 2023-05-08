@@ -57,9 +57,6 @@ Icon Box widget CSS for Elementor
 Charles Loehle
 @charles-loehle
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
 ## License
 
 GNU GENERAL PUBLIC LICENSE
