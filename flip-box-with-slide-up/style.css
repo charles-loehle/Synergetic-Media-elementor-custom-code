@@ -1,0 +1,124 @@
+/* Base styles */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+img {
+	border-style: none;
+	height: auto;
+	max-width: 100%;
+}
+
+.elementor img {
+	height: auto;
+	max-width: 100%;
+	border: none;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+/* Everything else */
+.elementor-section {
+	background-image: url('https://picsum.photos/seed/picsum/1400/500');
+	background-repeat: no-repeat;
+}
+
+.elementor-container {display: flex;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+}
+
+.elementor-row {
+  width: 100%;
+  display: flex;
+}
+
+.elementor-column {
+  width: 20%;
+}
+
+.elementor-widget-container {
+	transition: background .3s, border .3s, border-radius .3s, box-shadow .3s;
+}
+
+.elementor-flip-box {
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+}
+
+.elementor-flip-box:hover .elementor-flip-box__front {
+	transform: translateX(0) translateY(-100%);
+}
+
+.elementor-flip-box__front {
+	transform: none;
+	background-color: #0201019c;
+}
+
+/* .elementor-flip-box__front:hover {
+	transform: translateX(0) translateY(-100%);
+} */
+
+.elementor-flip-box__layer {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transition: all .6s ease-in-out;
+}
+
+.elementor-flip-box__layer__overlay {
+	padding: 0em 1em 0em 1em;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+  width: 100%;
+  height: 100%;
+	color: #fff;
+}
+
+.elementor-flip-box__image {
+	margin: 0 0 20px;
+	display: inline-block;
+	width: 50%;
+	opacity: 1;
+}
+
+.lazyloaded {
+	opacity: 1;
+  transition: opacity 400ms;
+  transition-delay: 0ms;
+}
+
+.elementor-flip-box__front .elementor-flip-box__layer__title {
+	font-family: "Lato",Sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	text-transform: uppercase;
+	line-height: 1.4em;
+}
+
+.elementor-flip-box__back {
+	/* background-color: #02010100; */
+	background-color: #0201019c;
+	transform: translateX(0) translateY(100%);
+
+}
+
+.elementor-flip-box:hover .elementor-flip-box__back {
+	transform: none;
+}
+
+.elementor-flip-box__back .elementor-flip-box__layer__description {
+	font-family: "Lato",Sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+}

@@ -1,0 +1,7 @@
+/* Fix default focus colors for Elementor menus */
+
+.elementor-nav-menu--dropdown .elementor-item:focus,
+.elementor-sub-item:focus {
+	background-color: #322d78;
+	color: #fff !important;
+}

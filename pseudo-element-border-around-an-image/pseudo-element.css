@@ -1,0 +1,22 @@
+img {
+	max-width: 100%;
+}
+
+.container {
+	padding: 100px;
+}
+
+.home-cta-image-container {
+	width: 50%;
+	position: relative;
+}
+
+.home-cta-image-container::before {
+	content: '';
+	position: absolute;
+	background-color: red;
+	width: 40px;
+	height: 80%;
+	top: 10%;
+	left: -40px;
+}
